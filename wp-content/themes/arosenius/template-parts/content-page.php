@@ -30,7 +30,7 @@
 		/*
 			edit_post_link(
 				sprintf(
-					/* translators: %s: Name of current post */
+
 					esc_html__( 'Edit %s', 'arosenius' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
