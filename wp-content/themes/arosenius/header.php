@@ -16,9 +16,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Bree+Serif" rel="stylesheet" type="text/css">
+
+<script src="https://use.typekit.net/cll5vty.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -32,11 +35,9 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="mainHeader" class="header">
 
-	<div class="overlay"></div>
-
 	<div class="container">
 		<div class="row">
-			<div class="seven columns header-text">
+			<div class="five columns header-text">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<div class="sub">1878 - 1909</div>
 				<?php

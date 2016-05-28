@@ -28,6 +28,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 html {
 	font-size: 100%;
+
+	background-image: url('img/unfinished.jpg');
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: repeat-x;
 }
 
 body {
@@ -38,24 +43,44 @@ h1 a, h2 a, h3 a, h4 a {
 	text-decoration: none;
 }
 
+a {
+	color: #EDEDED;
+	text-decoration: none;
+	border-bottom: 2px dotted rgba(255, 255, 255, 0.56);
+}
+
 .header {
 	position: fixed;
 
 	top: 0;
-	left: 0;
 	right: 0;
-
-	height: 666px;
+	left: 0;
 
 	margin-bottom: 50px;
+	padding-top: 190px;
 
-	background-image: url('img/header.jpg');
-	background-attachment: fixed;
-	background-position: top center;
-	background-repeat: repeat-x;
+	text-align: right;
 
-	@media (max-width: 950px) {
-		height: 516px;
+	z-index: 10;
+
+	@media (max-width: 1100px) {
+		padding-top: 110px;
+	}
+
+	@media (max-width: 900px) {
+		position: relative;
+
+		padding-top: 50px;
+
+		text-align: left;
+
+		border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+		background: rgba(0, 0, 0, 0.22);
+	}
+
+	a {
+		border: none;
 	}
 
 	.overlay {
@@ -70,12 +95,14 @@ h1 a, h2 a, h3 a, h4 a {
 	}
 
 	.header-text {
-		margin-top: 190px;
+		float: right;
 
 		color: #fff;
 
-		@media (max-width: 950px) {
-			margin-top: 80px;
+		@media (max-width: 900px) {
+			float: none;
+
+			width: 100%;
 		}
 
 		h1 {
@@ -99,10 +126,6 @@ h1 a, h2 a, h3 a, h4 a {
 			font-family: 'Georgia', 'Times New Roman', serif;
 			font-style: italic;
 			font-size: 1.3rem;
-
-			@media (max-width: 950px) {
-				font-size: 1.1rem;
-			}
 		}
 	}
 
@@ -146,15 +169,20 @@ h1 a, h2 a, h3 a, h4 a {
 .main-content {
 	position: relative;
 
-	margin-top: 666px;
-	padding-top: 50px;
+	padding-top: 190px;
 
-	background: #fff;
+	color: #fff;
 
-	z-index: 10;
+	@media (max-width: 1100px) {
+		padding-top: 120px;
+	}
 
-	@media (max-width: 950px) {
-		margin-top: 516px;
+	@media (max-width: 900px) {
+		padding-top: 0;
+	}
+
+	.content-column {
+		z-index: 20;
 	}
 }
 

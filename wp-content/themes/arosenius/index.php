@@ -17,7 +17,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 
-			<div class="eight columns"
+			<div class="seven columns content-column">
 				<?php
 				if ( have_posts() ) :
 
@@ -49,13 +49,13 @@ get_header(); ?>
 
 				endif; ?>
 			</div>
-
+<!--
 			<div class="four columns">
 				<?php
-					get_sidebar();
+					//get_sidebar();
 				?>
 			</div>
-
+-->
 		</div>
 	</div>
 
